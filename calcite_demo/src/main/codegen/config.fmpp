@@ -1,0 +1,53 @@
+data: {
+  parser: {
+    package: "com.aloudata.demo.parser.impl",
+    class: "DemoSqlParserImpl",
+
+
+    imports: [
+        "org.example.CreateMaterializedView"
+    ]
+
+
+    keywords: [
+        "IF",
+        "MATERIALIZED"
+    ]
+
+
+    statementParserMethods: [
+        "SqlCreateMaterializedView()"
+    ]
+
+
+    implementationFiles: [
+        "parserImpls.ftl"
+    ]
+
+    nonReservedKeywords: [
+        "IF",
+        "MATERIALIZED",
+        "NAME"
+    ]
+
+    nonReservedKeywordsToAdd: []
+    createStatementParserMethods: []
+    dropStatementParserMethods: []
+    joinTypes: []
+    extraBinaryExpressions: []
+    alterStatementParserMethods: []
+    literalParserMethods: []
+    dataTypeParserMethods: []
+    builtinFunctionCallMethods: []
+    binaryOperatorsTokens: []
+    includePosixOperators: false
+    includeCompoundIdentifier: true
+    includeBraces: true
+    includeAdditionalDeclarations: false
+  }
+}
+
+
+freemarkerLinks: {
+  includes: includes/
+}
